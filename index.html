@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6d21c478cb.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-container">
+        <form>
+            <h3>Send money online</h3>
+            <label for="title">Receiver's country</label><br>
+            <select name="country" id="country">  
+                <option disabled selected>Select country</option>   
+                <option>Egy</option>
+                <option>KSA</option>
+                <option>UK</option>
+                <option>UEA</option>
+                 <option>USA</option>
+            </select> 
+            <div id="transfer">
+                <label for="title" >Send amount</label>
+                <input form="float"></input>
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                <label for="title" >Receive amount</label>
+                <input form="float"></input>
+            </div>
+            <label for="title">How does your receiver want the money?</label>
+            <div class="transfer-ways">
+                <button>
+                    <i class="fa-solid fa-money-bill"></i><br>
+                    Cash pick-up
+                </button>
+                <button>
+                    <i class="fa-solid fa-building-columns"></i><br>
+                    Bank account
+                </button>
+                <button>
+                    <i class="fa-brands fa-apple-pay"></i><br>
+                    Mobile Wallet
+                </button>
+            </div>
+            <!--  -->
+            
+            <label for="title">How would you like to pay?</label><br>
+            <input type="radio" name="fav_pay">
+            <label for="answer">Pay online</label>
+            <input type="radio" name="fav_pay">
+            <label type="radio">pay cash in-store</label>
+            <div class="transfer-ways">
+                <button>
+                    <i class="fa-regular fa-credit-card"></i><br>
+                    Credit card
+                </button>
+                <button>
+                    <i class="fa-regular fa-credit-card"></i><br>
+                    Debit card
+                </button>
+                <button>
+                    <i class="fa-solid fa-building-columns"></i><br>
+                    Bank account
+                </button><br>
+                <a href="#">
+                    Continue <i class="fa-solid fa-chevron-right"></i>
+                </a>
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>
