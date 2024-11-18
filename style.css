@@ -1,0 +1,59 @@
+*{
+    font-family:sans-serif
+}
+body{
+    background-color: rgb(42, 173, 173);
+}
+.form-container{
+    width:475px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    padding-top: 30px ;
+}
+form{
+    position: relative;
+    margin: auto;
+    width: 445px;
+    height: 570px;
+    background-color: aqua;   
+}
+h3{
+    font-weight: bold;
+    font-size: 2rem;
+}
+label{
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+#country{
+    background-color: rgb(240, 239, 239);
+    
+}
+
+#transfer{
+    display: flex ;
+}
+.fa-arrow-right-arrow-left{
+    align-self: end;
+
+}
+.transfer-ways{
+    display: flex;
+    justify-content: space-between;
+    background-color: blanchedalmond;
+}
+
+#continue{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    text-decoration: none;
+    line-height: 40px;
+    width: 445px;
+    height: 40px;
+    text-align: center;
+    background-color: rgb(255, 217, 0);
+    color: black;
+    font-weight: bold;
+}

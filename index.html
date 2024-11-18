@@ -12,23 +12,34 @@
     <div class="form-container">
         <form>
             <h3>Send money online</h3>
-            <label for="title">Receiver's country</label><br>
-            <select name="country" id="country">  
-                <option disabled selected>Select country</option>   
+            
+            <!-- Receiver's country -->
+            <label for="country">Receiver's country</label><br>
+            <select name="country" id="country">
+                <option disabled selected>Select country</option>
                 <option>Egy</option>
                 <option>KSA</option>
                 <option>UK</option>
                 <option>UEA</option>
-                 <option>USA</option>
-            </select> 
+                <option>USA</option>
+            </select>
+            
+            <!-- Send and receive amount -->
             <div id="transfer">
-                <label for="title" >Send amount</label>
-                <input form="float"></input>
+                <div class="s_r_amount">
+
+                    <label for="send-amount">Send amount</label><br>
+                    <input type="number" required value="0.00">
+                </div>
                 <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                <label for="title" >Receive amount</label>
-                <input form="float"></input>
+                <div class="s_r_amount">
+                    <label for="receive-amount">Receive amount</label><br>
+                    <input type="number" required value="0.00">
+                </div>
             </div>
-            <label for="title">How does your receiver want the money?</label>
+            
+            <!-- Transfer method -->
+            <label for="transfer-method">How does your receiver want the money?</label>
             <div class="transfer-ways">
                 <button>
                     <i class="fa-solid fa-money-bill"></i><br>
@@ -43,13 +54,16 @@
                     Mobile Wallet
                 </button>
             </div>
-            <!--  -->
             
-            <label for="title">How would you like to pay?</label><br>
-            <input type="radio" name="fav_pay">
-            <label for="answer">Pay online</label>
-            <input type="radio" name="fav_pay">
-            <label type="radio">pay cash in-store</label>
+            <!-- Payment method -->
+            <label for="payment-method">How would you like to pay?</label>
+            <div id="radio">
+                <input type="radio" name="fav_pay">
+                <label for="pay-online">Pay online</label>
+                <input type="radio" name="fav_pay">
+                <label for="pay-in-store">Pay cash in-store</label>
+            </div>
+
             <div class="transfer-ways">
                 <button>
                     <i class="fa-regular fa-credit-card"></i><br>
@@ -63,12 +77,11 @@
                     <i class="fa-solid fa-building-columns"></i><br>
                     Bank account
                 </button><br>
-                <a href="#">
+                <a href="#" id="continue">
                     Continue <i class="fa-solid fa-chevron-right"></i>
                 </a>
             </div>
         </form>
-
     </div>
 </body>
 </html>
